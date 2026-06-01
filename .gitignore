@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+
+# Mac OS
+.DS_Store
+
+# Gereksiz dosyalar (Kullanılmayan eski scriptler ve şablonlar)
+gereksiz/
+docs/
+
+# Ağır YOLO ağırlıkları (GitHub 100MB limiti nedeniyle hariç tutuldu)
+model/best.pt
+model/*.pt
+results/
