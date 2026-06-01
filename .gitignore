@@ -13,7 +13,5 @@ env/
 gereksiz/
 docs/
 
-# Ağır YOLO ağırlıkları (GitHub 100MB limiti nedeniyle hariç tutuldu)
-model/best.pt
-model/*.pt
+# YOLO çalışma dosyaları ve ağırlık dizinleri
 results/
