@@ -2,7 +2,7 @@
 
 This project is a deep learning-based tool designed to automatically detect debris and heavily damaged buildings from aerial photographs taken after earthquakes.
 
-Using datasets obtained from the Kahramanmaraş earthquakes, we applied **Fine-Tuning** to the **YOLOv12x** (Extra Large) architecture to specialize it for disaster zones. The model can instantly detect destroyed and severely damaged structures in aerial imagery by drawing bounding boxes around them.
+Using datasets obtained from the Kahramanmaraş earthquakes, we applied **Fine-Tuning** to the **YOLOv8x** (Extra Large) architecture to specialize it for disaster zones. The model can instantly detect destroyed and severely damaged structures in aerial imagery by drawing bounding boxes around them.
 
 ### 🗄️ Dataset
 The model was fine-tuned using the custom Kahramanmaraş earthquake aerial dataset, which is publicly available on Roboflow:
@@ -26,9 +26,9 @@ After running this command, the interface will automatically open in your web br
 
 ## 📊 Model Performance Metrics
 Trained in a Kaggle environment at 480x480 resolution for 500 Epochs (with Early Stopping), the model achieved the following metrics on the validation dataset:
-- **Precision:** 50.5%
-- **Recall:** 35.3%
-- **mAP@50:** 36.8%
+- **Precision:** 65.4%
+- **Recall:** 62.2%
+- **mAP@50:** 62.5%
 
 ## 📂 Directory Structure
 - `app_st.py`: The main file containing the Streamlit interface code.

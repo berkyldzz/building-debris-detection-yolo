@@ -50,7 +50,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<div class="main-header">🚁 YOLOv12 Earthquake Debris Detection</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">🚁 YOLOv8 Earthquake Debris Detection</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">AI-Powered Automatic Damage and Debris Analysis</div>', unsafe_allow_html=True)
 
 @st.cache_resource
@@ -73,13 +73,13 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### 📊 Model Performance (Test)")
     col_m1, col_m2 = st.columns(2)
-    col_m1.metric(label="Precision", value="50.5%")
-    col_m2.metric(label="Recall", value="35.3%")
-    st.metric(label="Mean Average Precision (mAP@50)", value="36.8%")
+    col_m1.metric(label="Precision", value="65.4%")
+    col_m2.metric(label="Recall", value="62.2%")
+    st.metric(label="Mean Average Precision (mAP@50)", value="62.5%")
     
     st.markdown("---")
     st.markdown("#### 👨‍💻 Project Details")
-    st.info("This model was **fine-tuned** using a custom aerial photography dataset obtained from the Kahramanmaraş earthquake, based on the **YOLOv12x** architecture. \\n\\nYou can access the dataset here: [Kahramanmaraş Dataset (Roboflow)](https://universe.roboflow.com/aeb-9lieg/maras-tpx5p-me1m7)")
+    st.info("This model was **fine-tuned** using a custom aerial photography dataset obtained from the Kahramanmaraş earthquake, based on the **YOLOv8x** architecture. \\n\\nYou can access the dataset here: [Kahramanmaraş Dataset (Roboflow)](https://universe.roboflow.com/aeb-9lieg/maras-tpx5p-me1m7)")
 
 # Main Screen Layout
 uploaded_file = st.file_uploader("📥 Upload Image for Analysis (Drag & drop or browse)", type=["jpg", "jpeg", "png"])
